@@ -1,0 +1,170 @@
+:root {
+  /* BASE */
+  --gds-dark: #0e1117;
+  --gds-light: #ffffff;
+
+  /* PRIMARY */
+  --gds-primary: #004add;
+  --gds-primary-hover: #003bb5;
+
+  --gds-secondary: #ec0062;
+
+  --gds-tertiary: #622cee;
+
+  /* BRAND */
+  --gds-brand-25: #eef7ff;
+  --gds-brand-50: #d9ebff;
+  --gds-brand-100: #bcddff;
+  --gds-brand-200: #8ec9ff;
+  --gds-brand-300: #59aaff;
+  --gds-brand-400: #3287ff;
+  --gds-brand-500: #1c67f4;
+  --gds-brand-600: #1451e1;
+  --gds-brand-700: #1741b6;
+  --gds-brand-800: #193c8f;
+  --gds-brand-900: #172b63;
+
+  /* NEUTRAL */
+  --gds-neutral-25: #f5fafc;
+  --gds-neutral-50: #f0f5fa;
+  --gds-neutral-100: #dde7f0;
+  --gds-neutral-200: #c5d2e0;
+  --gds-neutral-300: #97a7bd;
+  --gds-neutral-400: #798aa3;
+  --gds-neutral-500: #58657a;
+  --gds-neutral-600: #475366;
+  --gds-neutral-700: #343d4c;
+  --gds-neutral-800: #282f3d;
+  --gds-neutral-900: #191f29;
+  --gds-neutral-1000: #12161f;
+
+  /* GREEN */
+  --gds-green-25: #edfff1;
+  --gds-green-50: #d0f5d8;
+  --gds-green-100: #b1ebbf;
+  --gds-green-200: #91e0a4;
+  --gds-green-300: #6ed687;
+  --gds-green-400: #49cc68;
+  --gds-green-500: #30a94c;
+  --gds-green-600: #188732;
+  --gds-green-700: #05641b;
+  --gds-green-800: #00410f;
+  --gds-green-900: #001f07;
+
+  /* RED */
+  --gds-red-25: #ffeae8;
+  --gds-red-50: #f9c4bf;
+  --gds-red-100: #f2a198;
+  --gds-red-200: #ec8072;
+  --gds-red-300: #e5614f;
+  --gds-red-400: #df452d;
+  --gds-red-500: #d82c0d;
+  --gds-red-600: #b31b00;
+  --gds-red-700: #8d1500;
+  --gds-red-800: #681000;
+  --gds-red-900: #420a00;
+
+  /* BLUE */
+  --gds-blue-25: #f1f7ff;
+  --gds-blue-50: #dbeaff;
+  --gds-blue-100: #c2dbfe;
+  --gds-blue-200: #a4cafe;
+  --gds-blue-300: #7fb5fd;
+  --gds-blue-400: #539afd;
+  --gds-blue-500: #1d7afc;
+  --gds-blue-600: #014fc7;
+  --gds-blue-700: #003791;
+  --gds-blue-800: #00205c;
+  --gds-blue-900: #001133;
+
+  /* AMBER */
+  --gds-amber-25: #fff5eb;
+  --gds-amber-50: #fdebd9;
+  --gds-amber-100: #fadfc3;
+  --gds-amber-200: #f8d0a5;
+  --gds-amber-300: #f6be7f;
+  --gds-amber-400: #f3a74f;
+  --gds-amber-500: #f18d13;
+  --gds-amber-600: #c26c00;
+  --gds-amber-700: #925300;
+  --gds-amber-800: #623900;
+  --gds-amber-900: #331e00;
+
+  /* TEAL */
+  --gds-teal-25: #f0ffff;
+  --gds-teal-50: #c4eff0;
+  --gds-teal-100: #97dde1;
+  --gds-teal-200: #68cad2;
+  --gds-teal-300: #37b4c3;
+  --gds-teal-400: #1c9ba9;
+  --gds-teal-500: #00818f;
+  --gds-teal-600: #006975;
+  --gds-teal-700: #00525a;
+  --gds-teal-800: #003a40;
+  --gds-teal-900: #002226;
+
+  /* PURPLE */
+  --gds-purple-25: #f9f5ff;
+  --gds-purple-50: #f0e6fd;
+  --gds-purple-100: #e4d2fb;
+  --gds-purple-200: #d4b7f9;
+  --gds-purple-300: #bf94f7;
+  --gds-purple-400: #a365f5;
+  --gds-purple-500: #812af3;
+  --gds-purple-600: #5400c3;
+  --gds-purple-700: #400093;
+  --gds-purple-800: #2b0063;
+  --gds-purple-900: #160033;
+
+  /* EMERALD */
+  --gds-emerald-25: #f0fff9;
+  --gds-emerald-50: #c7f1e0;
+  --gds-emerald-100: #a0e4c7;
+  --gds-emerald-200: #78d6af;
+  --gds-emerald-300: #51c997;
+  --gds-emerald-400: #2abb7f;
+  --gds-emerald-500: #219d6a;
+  --gds-emerald-600: #158053;
+  --gds-emerald-700: #0b623e;
+  --gds-emerald-800: #034429;
+  --gds-emerald-900: #002616;
+
+  /* MAGENTA */
+  --gds-magenta-25: #fff5fb;
+  --gds-magenta-50: #f7e3ef;
+  --gds-magenta-100: #eecee2;
+  --gds-magenta-200: #e6b5d3;
+  --gds-magenta-300: #de99c3;
+  --gds-magenta-400: #d577b1;
+  --gds-magenta-500: #cd519d;
+  --gds-magenta-600: #a72775;
+  --gds-magenta-700: #800751;
+  --gds-magenta-800: #590037;
+  --gds-magenta-900: #33001f;
+
+  /* YELLOW */
+  --gds-yellow-25: #fff9ed;
+  --gds-yellow-50: #ffefc6;
+  --gds-yellow-100: #ffe49c;
+  --gds-yellow-200: #ffd96e;
+  --gds-yellow-300: #ffce3a;
+  --gds-yellow-400: #ffc400;
+  --gds-yellow-500: #d2a200;
+  --gds-yellow-600: #a58000;
+  --gds-yellow-700: #785f00;
+  --gds-yellow-800: #4b3c00;
+  --gds-yellow-900: #1f1800;
+
+  /* LIME */
+  --gds-lime-25: #f8ffeb;
+  --gds-lime-50: #eef9d7;
+  --gds-lime-100: #e1f4be;
+  --gds-lime-200: #d2ee9f;
+  --gds-lime-300: #c0e97a;
+  --gds-lime-400: #a9e34b;
+  --gds-lime-500: #7dbd18;
+  --gds-lime-600: #5c9800;
+  --gds-lime-700: #447200;
+  --gds-lime-800: #2d4c00;
+  --gds-lime-900: #162600;
+}

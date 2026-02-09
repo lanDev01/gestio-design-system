@@ -1,0 +1,29 @@
+.line {
+  counter-increment: line;
+  position: relative;
+  padding-left: 2.5rem; // pl-10
+
+  &::before {
+    content: counter(line);
+    position: absolute;
+    inset-block: 0;
+    left: 0;
+
+    width: 1.5rem;
+    margin-right: 1.5rem;
+
+    text-align: right;
+    font-size: 0.75rem; // text-xs
+    opacity: 0.35;
+
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:first-of-type {
+    counter-set: line var(--counter-start);
+  }
+}

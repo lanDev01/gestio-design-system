@@ -1,0 +1,105 @@
+.gds-heading-3xl {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 3.75rem;
+    line-height: 4rem;
+  }
+}
+
+.gds-heading-2xl {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+.gds-heading-xl {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.gds-heading-lg {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+
+.gds-heading-md {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+}
+
+.gds-heading-sm {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+
+.gds-heading-xs {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--text-foreground);
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+}
+
+.gds-subheading {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: var(--gds-neutral-400);
+  text-wrap: balance;
+}

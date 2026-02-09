@@ -1,0 +1,31 @@
+:root {
+  --primary: var(--gestio-brand-500);
+  --primary-hover: var(--gestio-brand-600);
+
+  --text-default: var(--gestio-neutral-900);
+  --text-muted: var(--gestio-neutral-500);
+
+  --bg-surface: var(--gestio-light);
+  --bg-disabled: var(--gestio-neutral-100);
+
+  --danger: var(--gestio-red-500);
+
+  --ring: rgba(0, 0, 0, 0.5);
+
+  --text-foreground: var(--gestio-neutral-900);
+}
+
+.dark {
+  --primary: var(--gestio-brand-400);
+  --primary-hover: var(--gestio-brand-300);
+
+  --text-default: var(--gestio-neutral-100);
+  --text-muted: var(--gestio-neutral-400);
+
+  --bg-surface: var(--gestio-dark);
+  --bg-disabled: var(--gestio-neutral-800);
+
+  --ring: rgba(255, 255, 255, 0.5);
+
+  --text-foreground: var(--gestio-neutral-100);
+}
