@@ -16,8 +16,7 @@
       "dom"
     ],
     "paths": {
-      "gds": [
-        "dist/gds/gds",
+      "@gestio/gds": [
         "dist/gds"
       ]
     }
