@@ -1,0 +1,23 @@
+.gds-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: var(--gds-font-primary, Inter);
+  font-weight: 600;
+  cursor: pointer;
+
+  &.primary {
+    background: var(--gds-primary);
+    color: white;
+  }
+
+  &.secondary {
+    background: var(--gds-secondary);
+    color: white;
+  }
+
+  &.tertiary {
+    background: var(--gds-tertiary);
+    color: white;
+  }
+}
