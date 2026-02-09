@@ -3,5 +3,10 @@
   "dest": "../../dist/gds",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    "src/lib/tokens",
+    "src/lib/styles",
+    "src/lib/styles.scss"
+  ]
 }
