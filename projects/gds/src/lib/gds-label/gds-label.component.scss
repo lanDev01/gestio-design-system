@@ -1,0 +1,42 @@
+.gds-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  font-weight: var(--font-weight-medium);
+  font-size: 0.875rem;
+  line-height: calc(1.25 / 0.875);
+
+  color: var(--gds-neutral-400);
+  cursor: pointer;
+
+  &__required {
+    color: var(--gds-red-500);
+    font-size: 0.875em;
+  }
+
+  &--error {
+    color: var(--gds-red-500);
+  }
+
+  &--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  // Sizes
+  &--sm {
+    font-size: 0.75rem;
+    line-height: calc(1.25 / 0.75);
+  }
+
+  &--md {
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+  }
+
+  &--lg {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}

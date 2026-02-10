@@ -1,0 +1,21 @@
+.gds-textbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 4px;
+
+  &__description {
+    font-size: 0.75rem;
+    color: var(--gds-neutral-400);
+  }
+
+  &__description--error {
+    color: var(--gds-red-500);
+  }
+
+  &__error-icon {
+    margin-right: 4px;
+    color: var(--gds-red-500);
+  }
+}

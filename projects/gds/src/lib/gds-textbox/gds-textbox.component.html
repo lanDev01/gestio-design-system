@@ -1,0 +1,35 @@
+<div class="gds-textbox">
+  <!-- Label -->
+  <gds-label
+    [for]="id"
+    [size]="size"
+    [required]="required"
+    [disabled]="disabled"
+    *ngIf="label"
+  >
+    {{ label }}
+  </gds-label>
+
+  <!-- Input Field -->
+  <gds-input
+    [id]="id"
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [invalid]="error"
+    [size]="size"
+    [value]="value"
+    (input)="onInput($event)"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+  ></gds-input>
+
+  <div
+    *ngIf="helperText || errorMessage"
+    [id]="id + '-description'"
+    class="gds-textbox__description"
+    [class.gds-textbox__description--error]="error && errorMessage"
+  >
+    {{ error && errorMessage ? errorMessage : helperText }}
+  </div>
+</div>

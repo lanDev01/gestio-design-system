@@ -1,0 +1,13 @@
+<label
+  class="gds-label"
+  [class.gds-label--disabled]="disabled"
+  [class.gds-label--sm]="size === 'sm'"
+  [class.gds-label--md]="size === 'md'"
+  [class.gds-label--lg]="size === 'lg'"
+  [class.gds-label--error]="error || required"
+  [attr.for]="for"
+>
+  <ng-content></ng-content>
+
+  <span *ngIf="required" class="gds-label__required">*</span>
+</label>
