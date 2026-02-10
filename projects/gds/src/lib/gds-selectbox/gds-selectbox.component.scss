@@ -1,9 +1,10 @@
 .gds-selectbox {
   position: relative;
   width: 100%;
+
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 
   &__control {
     position: relative;
@@ -149,16 +150,16 @@
     transition: background-color 0.15s ease;
 
     &:hover {
-      background-color: var(--bg-muted);
+      background-color: var(--gds-neutral-50);
     }
 
     &--selected {
-      background-color: var(--gds-brand-100);
+      background-color: var(--gds-brand-50);
       color: var(--primary);
       font-weight: 500;
 
       &:hover {
-        background-color: var(--gds-brand-200);
+        background-color: var(--gds-brand-100);
       }
     }
 

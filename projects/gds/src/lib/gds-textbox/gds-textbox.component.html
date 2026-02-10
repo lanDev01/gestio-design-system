@@ -3,9 +3,9 @@
   <gds-label
     [for]="id"
     [size]="size"
-    [required]="required"
+    [required]="isRequired"
     [disabled]="disabled"
-    [error]="error"
+    [error]="hasError"
     *ngIf="label"
   >
     {{ label }}
@@ -16,21 +16,21 @@
     [id]="id"
     [type]="type"
     [placeholder]="placeholder"
-    [disabled]="disabled"
-    [invalid]="error"
+    [disabled]="disabled || (control && control.disabled)"
+    [invalid]="hasError"
     [size]="size"
-    [value]="value"
+    [value]="control ? control.value : value"
     (input)="onInput($event)"
     (focus)="onFocus()"
     (blur)="onBlur()"
   ></gds-input>
 
   <div
-    *ngIf="helperText || errorMessage"
+    *ngIf="helperText || validationMessage"
     [id]="id + '-description'"
     class="gds-textbox__description"
-    [class.gds-textbox__description--error]="error && errorMessage"
+    [class.gds-textbox__description--error]="hasError"
   >
-    {{ error && errorMessage ? errorMessage : helperText }}
+    {{ hasError ? validationMessage : helperText }}
   </div>
 </div>
