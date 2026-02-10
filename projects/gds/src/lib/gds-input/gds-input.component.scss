@@ -6,12 +6,11 @@
   // Estados
   &.gds-input--invalid {
     .gds-input {
-      border-color: var(--gds-red-300);
-      background-color: var(--gds-red-25);
+      border-color: var(--danger);
 
       &:focus {
-        border-color: var(--gds-red-400);
-        box-shadow: 0 0 0 2px var(--gds-red-100);
+        border-color: var(--danger);
+        box-shadow: 0 0 0 3px rgba(216, 44, 13, 0.1);
       }
     }
   }
@@ -20,64 +19,74 @@
     .gds-input {
       opacity: 0.6;
       cursor: not-allowed;
-      background-color: var(--gds-neutral-50);
+      background-color: var(--bg-disabled);
     }
   }
 
   &.gds-input--focused {
     .gds-input {
-      border-color: var(--gds-brand-300);
-      box-shadow: 0 0 0 2px var(--gds-brand-100);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(28, 103, 244, 0.1);
     }
 
     &.gds-input--invalid .gds-input {
-      border-color: var(--gds-red-400);
-      box-shadow: 0 0 0 2px var(--gds-red-100);
+      border-color: var(--danger);
+      box-shadow: 0 0 0 3px rgba(216, 44, 13, 0.1);
     }
   }
 
   // Tamanhos
   &.gds-input--sm .gds-input {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 14px;
   }
 
   &.gds-input--md .gds-input {
-    padding: 8px 12px;
-    font-size: 0.875rem;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
   }
 
   &.gds-input--lg .gds-input {
-    padding: 10px 14px;
-    font-size: 1rem;
+    height: 48px;
+    padding: 0 12px;
+    font-size: 14px;
   }
 }
 
 .gds-input {
   width: 100%;
-  border: 1px solid var(--gds-neutral-200);
+  border: 1px solid var(--gds-neutral-300);
   border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  color: var(--gds-neutral-700);
-  background-color: var(--gds-neutral-25);
-  transition: all 0.2s ease-in-out;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text-foreground);
+  background-color: var(--bg-surface);
+  transition: all 0.2s ease;
   box-sizing: border-box;
+  font-family: inherit;
 
   &::placeholder {
-    color: var(--gds-neutral-400);
+    color: var(--text-foreground);
+    opacity: 0.5;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--gds-neutral-400);
   }
 
   &:focus {
     outline: none;
-    border-color: var(--gds-brand-300);
-    box-shadow: 0 0 0 2px var(--gds-brand-100);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(28, 103, 244, 0.1);
   }
 
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-    background-color: var(--gds-neutral-50);
+    background-color: var(--bg-disabled);
   }
 }

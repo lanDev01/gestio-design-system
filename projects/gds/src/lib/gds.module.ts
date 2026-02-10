@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { GdsButtonModule } from '../public-api';
 import { GdsInputModule } from './gds-input/gds-input.module';
 import { GdsLabelModule } from './gds-label/gds-label.module';
+import { GdsSelectboxModule } from './gds-selectbox/gds-selectbox.module';
 import { GdsTextboxModule } from './gds-textbox/gds-textbox.module';
 import { GdsComponent } from './gds.component';
 
@@ -14,6 +15,7 @@ import { GdsComponent } from './gds.component';
     GdsInputModule,
     GdsLabelModule,
     GdsTextboxModule,
+    GdsSelectboxModule,
   ],
   exports: [GdsComponent],
 })
