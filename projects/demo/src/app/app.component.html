@@ -2,7 +2,18 @@
 <div class="layout-container">
   <app-aside></app-aside>
   <main>
-    <h1>Input</h1>
+    <h1 class="title">Input</h1>
     <gds-input placeholder="Enter your name"></gds-input>
+
+    <h1 class="title">Label</h1>
+    <gds-label for="name" required>Please enter your name</gds-label>
+
+    <h1 class="title">Textbox</h1>
+    <gds-textbox
+      label="Name"
+      placeholder="Enter your name"
+      required
+      helperText="This is your full name"
+    ></gds-textbox>
   </main>
 </div>
