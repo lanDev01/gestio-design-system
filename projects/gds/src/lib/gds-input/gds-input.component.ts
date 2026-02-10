@@ -1,67 +1,43 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  forwardRef,
+  EventEmitter,
   Input,
+  Output,
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'gds-input',
   templateUrl: './gds-input.component.html',
   styleUrls: ['./gds-input.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => GdsInputComponent),
-      multi: true,
-    },
-  ],
 })
-export class GdsInputComponent implements ControlValueAccessor {
+export class GdsInputComponent {
   @Input() id = '';
   @Input() placeholder = '';
   @Input() type: 'text' | 'email' | 'password' | 'number' = 'text';
   @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() disabled = false;
   @Input() invalid = false;
+  @Input() value: string = '';
 
-  value: string = '';
+  @Output() input = new EventEmitter<Event>();
+  @Output() focus = new EventEmitter<void>();
+  @Output() blur = new EventEmitter<void>();
+
   isFocused: boolean = false;
 
-  private onChange = (value: string) => {};
-  private onTouched = () => {};
-
   onInput(event: Event): void {
-    const target = event.target as HTMLInputElement;
-    this.value = target.value;
-    this.onChange(this.value);
+    this.input.emit(event);
   }
 
   onFocus(): void {
     this.isFocused = true;
+    this.focus.emit();
   }
 
   onBlur(): void {
     this.isFocused = false;
-    this.onTouched();
-  }
-
-  // ControlValueAccessor implementation
-  writeValue(value: string | null): void {
-    this.value = value ?? '';
-  }
-
-  registerOnChange(fn: (value: string) => void): void {
-    this.onChange = fn;
-  }
-
-  registerOnTouched(fn: () => void): void {
-    this.onTouched = fn;
-  }
-
-  setDisabledState(isDisabled: boolean): void {
-    this.disabled = isDisabled;
+    this.blur.emit();
   }
 }
