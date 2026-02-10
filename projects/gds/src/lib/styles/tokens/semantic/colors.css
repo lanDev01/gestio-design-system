@@ -13,7 +13,7 @@
   --ring: rgba(0, 0, 0, 0.5);
 
   --bg-muted: var(--gds-neutral-200);
-  --background: var(--gds-neutral-50);
+  --background: var(--gds-neutral-25);
   --text-foreground: var(--gds-neutral-900);
 }
 
