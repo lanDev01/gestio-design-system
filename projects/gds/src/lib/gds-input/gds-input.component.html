@@ -1,0 +1,22 @@
+<div
+  class="gds-input-container"
+  [class.gds-input--invalid]="invalid"
+  [class.gds-input--disabled]="disabled"
+  [class.gds-input--focused]="isFocused"
+  [class.gds-input--sm]="size === 'sm'"
+  [class.gds-input--md]="size === 'md'"
+  [class.gds-input--lg]="size === 'lg'"
+>
+  <input
+    [id]="id"
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [value]="value"
+    class="gds-input"
+    [attr.aria-invalid]="invalid"
+    (input)="onInput($event)"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+  />
+</div>
