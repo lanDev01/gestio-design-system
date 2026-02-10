@@ -7,9 +7,19 @@ main {
   flex: 1;
   background-color: var(--background);
   padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .title {
   font-size: 1.5rem;
   margin-bottom: 0.825rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

@@ -2,32 +2,78 @@
 <div class="layout-container">
   <app-aside></app-aside>
   <main>
-    <h1 class="title">Input</h1>
-    <gds-input placeholder="Enter your name"></gds-input>
-    <gds-input
-      [type]="'password'"
-      placeholder="Enter your password"
-    ></gds-input>
-    <gds-input [type]="'number'" placeholder="Enter your age"></gds-input>
+    <section>
+      <h1 class="title">Input</h1>
+      <div class="grid">
+        <gds-input></gds-input>
 
-    <h1 class="title">Label</h1>
-    <gds-label for="name" required>Please enter your name</gds-label>
+        <gds-input
+          [type]="'password'"
+          placeholder="Enter your password"
+        ></gds-input>
 
-    <h1 class="title">Textbox</h1>
-    <gds-textbox
-      label="Name"
-      placeholder="Enter your name"
-      required
-      helperText="This is your full name"
-    ></gds-textbox>
+        <gds-input [type]="'number'" placeholder="Enter your age"></gds-input>
+      </div>
+    </section>
 
-    <h1 class="title">Selectbox</h1>
-    <gds-selectbox
-      label="Country"
-      placeholder="Select your country"
-      [required]="true"
-      [error]="true"
-      [options]="options"
-    ></gds-selectbox>
+    <section>
+      <h1 class="title">Label</h1>
+      <gds-label for="name" required>Please enter your name</gds-label>
+    </section>
+
+    <section>
+      <h1 class="title">Textbox</h1>
+      <div class="grid">
+        <gds-textbox
+          label="Name"
+          placeholder="Enter your name"
+          required
+          helperText="This is your full name"
+        ></gds-textbox>
+
+        <gds-textbox
+          label="Name"
+          placeholder="Enter your name"
+          helperText="This is your full name"
+          [disabled]="true"
+        ></gds-textbox>
+
+        <gds-textbox
+          label="Name"
+          placeholder="Enter your name"
+          helperText="This is your full name"
+          [required]="true"
+          [error]="true"
+        ></gds-textbox>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="title">Selectbox</h1>
+      <div class="grid">
+        <gds-selectbox
+          label="Country"
+          placeholder="Select your country"
+          [required]="true"
+          [options]="options"
+        ></gds-selectbox>
+
+        <gds-selectbox
+          label="Country"
+          placeholder="Select your country"
+          [required]="true"
+          [disabled]="true"
+          [options]="options"
+        ></gds-selectbox>
+
+        <gds-selectbox
+          label="Country"
+          placeholder="Select your country"
+          [required]="true"
+          [error]="true"
+          [options]="options"
+        ></gds-selectbox>
+      </div>
+    </section>
   </main>
 </div>
