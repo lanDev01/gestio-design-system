@@ -4,6 +4,11 @@
   <main>
     <h1 class="title">Input</h1>
     <gds-input placeholder="Enter your name"></gds-input>
+    <gds-input
+      [type]="'password'"
+      placeholder="Enter your password"
+    ></gds-input>
+    <gds-input [type]="'number'" placeholder="Enter your age"></gds-input>
 
     <h1 class="title">Label</h1>
     <gds-label for="name" required>Please enter your name</gds-label>
@@ -15,5 +20,14 @@
       required
       helperText="This is your full name"
     ></gds-textbox>
+
+    <h1 class="title">Selectbox</h1>
+    <gds-selectbox
+      label="Country"
+      placeholder="Select your country"
+      [required]="true"
+      [error]="true"
+      [options]="options"
+    ></gds-selectbox>
   </main>
 </div>
