@@ -57,7 +57,7 @@
 
 .gds-input {
   width: 100%;
-  border: 1px solid var(--gds-neutral-300);
+  border: 1px solid var(--gds-neutral-100);
   border-radius: 6px;
   height: 40px;
   padding: 0 12px;
@@ -75,7 +75,7 @@
   }
 
   &:hover:not(:disabled) {
-    border-color: var(--gds-neutral-400);
+    border-color: var(--gds-neutral-300);
   }
 
   &:focus {
